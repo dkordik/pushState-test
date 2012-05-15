@@ -1,0 +1,24 @@
+#Lighttpd config
+
+server.document-root = "."
+
+server.indexfiles = (
+  "index.html"
+)
+
+server.port = 3003
+
+mimetype.assign = (
+  ".html" => "text/html",
+  ".jpg" => "image/jpeg",
+  ".png" => "image/png"
+)
+
+server.modules = (
+  "mod_rewrite"
+)
+
+url.rewrite = (
+  "^/(.+)[\.](less|css|js|html|gif|png|jpg)$" => "/$1.$2", #pass static files through
+  "^/(.*)$" => "/" #rewrite the rest
+)

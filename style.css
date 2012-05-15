@@ -1,0 +1,7 @@
+body { font-size:30px; background-color:cornsilk; color:saddlebrown; font-family:Helvetica, Arial, sans-serif; }
+[data-href] { display:none; }
+img { height:300px; margin-bottom:30px; display:block;}
+a, a:visited { color:hotpink; }
+a:active { color:darken(hotpink,40%); }
+a.focus { color:saddlebrown; text-decoration:none; }
+nav { margin-bottom:50px; }
